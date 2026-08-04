@@ -30,7 +30,11 @@ The best-performing model was:
 - Accuracy: 89.1%
 - F1-score: 89.1%
 
-The results show that TF-IDF combined with root-based stemming provides effective performance for Arabic sentiment classification.
+The results demonstrate that TF-IDF provided the strongest feature representation for this dataset, especially when combined with root-based stemming and SVM classification.
+
+Although **FastText** is a powerful word embedding technique that can capture semantic relationships and handle morphological variations, it achieved lower performance in this study. This is likely due to the limited size of the dataset, where traditional statistical features such as TF-IDF were more effective.
+
+**Logistic Regression (LR)** achieved competitive classification performance while providing significantly faster training time compared with SVM, making it a practical choice for real-time sentiment analysis applications where efficiency is important.
 
 ## Future Work
 Future improvements include exploring deep learning models, contextual embeddings such as AraBERT, and larger Arabic datasets.
